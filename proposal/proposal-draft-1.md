@@ -1,7 +1,7 @@
 # Investigating and Implementing Intra-Kernel Security in Unikraft
 *Tom Cassar*
 
-Unikernels are lightweight single-address space virtual machines[^1] created by compiling an application together with the operating system libraries on which it depends. This results in a lightweight executable which can boot in milliseconds, has a minimal attack surface, and boasts stronger isolation than alternative technologies (such as containers) on systems where multiple unikernels are being run [^4].
+Unikernels are lightweight single-address space virtual machines[^1] created by compiling an application together with the operating system libraries on which it depends. This results in a lightweight executable which can boot in milliseconds, has a minimal attack surface, and boasts stronger isolation than alternative technologies (such as containers) on systems where multiple unikernels are being run[^4].
 
 Since unikernels are designed to run only one application, they are compiled missing many security features that come standard on other operating systems. Michaels and Dilelo [^2] found that the unikernels they investigated had minimal levels of security and were compared to embedded systems. They wrote that "features like ASLR, `W^X`, stack canaries, heap integrity checks and more are completely absent or seriously flawed". Other papers have argued that the assumption that unikernels can be viewed as a single unit of trust is not suitable for today's cloud security requirements.[^1] 
 
